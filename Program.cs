@@ -66,6 +66,18 @@ class Program
                 resultado = Multplicar(num1, num2);
                 Console.WriteLine("El resultado es: " + resultado);
                 break;
+            case 4:
+                // Se valida la división por cero
+                if (num2 != 0)
+                {
+                    resultado = Division(num1, num2);
+                    Console.WriteLine($"El resultado de la división es: {resultado}");
+                }
+                else
+                {
+                    Console.WriteLine("Error: No se puede dividir por cero.");
+                }
+                break;
 
             default:
                 Console.WriteLine("Opción no válida.");
@@ -88,5 +100,9 @@ class Program
     static double Multplicar(double a, double b)
     {
         return a * b;
+    }
+    static double Division(double a, double b)
+    {
+        return a / b;
     }
 }
