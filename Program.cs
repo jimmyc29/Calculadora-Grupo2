@@ -62,6 +62,11 @@ class Program
                 Console.WriteLine("El resultado es: " + resultado);
                 break;
 
+            case 3:
+                resultado = Multplicar(num1, num2);
+                Console.WriteLine("El resultado es: " + resultado);
+                break;
+
             default:
                 Console.WriteLine("Opción no válida.");
                 break;
@@ -78,5 +83,10 @@ class Program
     static double Resta(double a, double b)
     {
         return a - b;
+    }
+
+    static double Multplicar(double a, double b)
+    {
+        return a * b;
     }
 }
